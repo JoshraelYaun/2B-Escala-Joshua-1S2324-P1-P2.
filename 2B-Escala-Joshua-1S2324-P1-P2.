@@ -1,0 +1,70 @@
+class MyClass {
+    
+    private String name;
+    private int age;
+    private double salary;
+
+   
+    public MyClass(String name, int age, double salary) {
+        this.name = name;
+        this.age = age;
+        this.salary = salary;
+    }
+
+  
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+  
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        MyClass obj1 = new MyClass("John", 30, 50000.0);
+        MyClass obj2 = new MyClass("Alice", 25, 60000.0);
+        MyClass obj3 = new MyClass("Bob", 35, 75000.0);
+
+       
+        System.out.println("Object 1: Name=" + obj1.getName() + ", Age=" + obj1.getAge() + ", Salary=" + obj1.getSalary());
+        obj1.setName("New Name");
+        obj1.setAge(40);
+        obj1.setSalary(55000.0);
+        System.out.println("Updated Object 1: Name=" + obj1.getName() + ", Age=" + obj1.getAge() + ", Salary=" + obj1.getSalary());
+
+        
+        System.out.println("Object 2: Name=" + obj2.getName() + ", Age=" + obj2.getAge() + ", Salary=" + obj2.getSalary());
+        obj2.setName("New Name 2");
+        obj2.setAge(45);
+        obj2.setSalary(60000.0);
+        System.out.println("Updated Object 2: Name=" + obj2.getName() + ", Age=" + obj2.getAge() + ", Salary=" + obj2.getSalary());
+
+       
+        System.out.println("Object 3: Name=" + obj3.getName() + ", Age=" + obj3.getAge() + ", Salary=" + obj3.getSalary());
+        obj3.setName("New Name 3");
+        obj3.setAge(50);
+        obj3.setSalary(80000.0);
+        System.out.println("Updated Object 3: Name=" + obj3.getName() + ", Age=" + obj3.getAge() + ", Salary=" + obj3.getSalary());
+    }
+}
